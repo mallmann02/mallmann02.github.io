@@ -58,6 +58,24 @@ nav ul {
     gap: 15px;
 }
 
+nav li{
+    border-radius: 5px;
+    padding: 0px 5px;
+
+    cursor: pointer;
+}
+
+nav li:hover{
+    background-color: #c1462c;
+    color: #FFF;
+    transition: all 0.5s;
+    scale: 1.1;
+}
+
+nav li:hover a {
+    font-weight: 600;
+}
+
 #hero {
     width: 100vw;
     height: relative;
