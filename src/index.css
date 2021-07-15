@@ -37,8 +37,6 @@ nav {
     justify-content: center;
 
     gap: 45%;
-    
-    
 }
 
 nav h1 {
@@ -76,12 +74,23 @@ nav li:hover a {
     font-weight: 600;
 }
 
+#darkModeButton img {
+  width: 100%;
+}
+
 #hero {
     width: 100vw;
     height: relative;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+#hero > h1 {
+  font-size: 72px;
+  color: #556266;
 }
 
 #hero-section{
@@ -96,6 +105,8 @@ nav li:hover a {
 
     width: 60vw;
     height: 300px;
+
+    margin-top: 75px;
 }
 
 .hero-section-image img {
@@ -105,6 +116,11 @@ nav li:hover a {
     border-radius: 50%;
 }
 
+.hero-section-introduction {
+    width: 40%;
+    min-width: 460px;
+}
+
 .hero-section-introduction h1{
     font-size: 26px;
 
@@ -112,7 +128,7 @@ nav li:hover a {
 }
 
 .hero-section-introduction p {
-    width: 55%;
+    width: 100%;
 }
 
 .hero-section-introduction p strong {
@@ -121,5 +137,24 @@ nav li:hover a {
 
 .hero-section-introduction hr {
     margin: 10px 0;
-    width: 50%;
+    width: 90%;
+}
+
+#darkModeButton {
+  background: url('../assets/images/theme_change-icon.png');
+  object-fit: contain;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  transition: box-shadow 0.4s;
+}
+
+#darkModeButton:hover {
+  box-shadow: 0 0 20px #2b1ea1; /*#6931C3*/
+}
+
+#darkModeButton.darkMode:hover {
+  box-shadow: 0 0 20px #c8d601 !important;
 }
